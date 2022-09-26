@@ -82,7 +82,12 @@ public class App extends Application {
         appMain();
     }
 
-    public static void main(String[] args) {
+    // You don't want to run main() in this file, or else JavaFX
+    // would be required in the module path on startup. This gives
+    // the "javafx runtime components are missing" error. Since we
+    // are trying to compile our app as a standalone jar, we want it
+    // to run without a fuss.
+    public static void entryPoint(String[] args) {
         launch();
     }
 

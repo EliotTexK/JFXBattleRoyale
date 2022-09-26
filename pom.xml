@@ -42,7 +42,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>edu.missouriwestern.csc346.fxapp.App</mainClass>
+                                    <mainClass>edu.missouriwestern.csc346.fxapp.Entry</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
@@ -101,7 +101,7 @@
                             <archive>
                             <manifest>
                                 <mainClass>
-                                    edu.missouriwestern.csc346.fxapp.App
+                                    edu.missouriwestern.csc346.fxapp.Entry
                                 </mainClass>
                             </manifest>
                             </archive>
